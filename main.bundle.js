@@ -443,7 +443,7 @@ var HomeComponent = (function () {
         this.parks = [
             {
                 name: 'Disneyland Paris',
-                image: 'assets/img/disneylandparis-logo.png',
+                image: '../assets/img/disneylandparis-logo.png',
                 subparks: [
                     {
                         name: 'Magic Kingdom',
@@ -457,7 +457,7 @@ var HomeComponent = (function () {
             },
             {
                 name: 'Disneyland Resort',
-                image: 'assets/img/disneyland-logo.png',
+                image: '../assets/img/disneyland-logo.png',
                 subparks: [
                     {
                         name: 'Magic Kingdom',
@@ -471,7 +471,7 @@ var HomeComponent = (function () {
             },
             {
                 name: 'Walt Disney World',
-                image: 'assets/img/wdw-logo.png',
+                image: '../assets/img/wdw-logo.png',
                 subparks: [
                     {
                         name: 'Magic Kingdom',

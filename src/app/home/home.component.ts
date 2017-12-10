@@ -1,11 +1,12 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { ParksService } from '../../services/parks.service';
 
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.sass']
 })
-export class HomeComponent {
+export class HomeComponent implements OnInit {
 
   readonly parks = [
     {
@@ -60,5 +61,9 @@ export class HomeComponent {
     }
   ]
 
-  constructor() { }
+  constructor(private parksService: ParksService) {}
+
+  ngOnInit() {
+    this.parksService.selectedPark = null;
+  }
 }

@@ -9,7 +9,7 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "deploy": "ng build --env=prod --base-href '/parks/' && angular-cli-ghpages --branch gh-pages"
+    "deploy": "ng build --env=prod --aot=true --base-href '/parks/' && angular-cli-ghpages --branch gh-pages"
   },
   "private": true,
   "dependencies": {

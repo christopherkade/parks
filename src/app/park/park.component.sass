@@ -1,19 +1,25 @@
 @import ../../styles
 
+.park
+  height: auto
+  background-color: rgba(255,255,255,0.5)
+
 .container
   padding: 25px
+  height: 100%
+  width: 45%
 
 .table
   height: 100%
   margin-top: 5vh
 
+// LOADING
 .spinner-container
   text-align: center
 
 .spinner
   font-size: 3em
 
-// LOADING
 .spinner
   width: 40px
   height: 40px
@@ -51,6 +57,9 @@
     -webkit-transform: scale(1.0)
 
 @include phone
+  .container
+    width: 100%
+
   .table
     margin: 0
     margin-top: 15vh

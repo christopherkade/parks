@@ -10,10 +10,12 @@ export class ParksService {
 
   private ENDPOINT = environment.ENDPOINT;
   loading: boolean = false;
+  selectedPark: string;
 
   constructor(private http: Http) { }
 
   getAttractions(parkName: string): Observable<Attraction> {
+    this.selectedPark = parkName;
     const url = this.ENDPOINT + '/' + parkName;
     return this.http.get(url)
       .map(res => res.json());

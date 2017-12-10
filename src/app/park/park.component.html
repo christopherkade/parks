@@ -1,6 +1,6 @@
 <div class="park">
   <div class="container">
-    <table class="table is-bordered is-striped is-narrow">
+    <table class="table">
       <thead>
         <tr>
           <th>Name</th>
@@ -9,7 +9,7 @@
       </thead>
       <tbody>
         <tr *ngFor="let attraction of attractions | sortBy: 'waitTime'">
-          <td>
+          <td class="attraction-name">
             {{attraction.name}}
           </td>
           <td>
@@ -21,10 +21,10 @@
     </table>
 
     <div class="container spinner-container" *ngIf="parksService.loading">
-        <div class="spinner">
-          <div class="double-bounce1"></div>
-          <div class="double-bounce2"></div>
-        </div>
+      <div class="spinner">
+        <div class="double-bounce1"></div>
+        <div class="double-bounce2"></div>
+      </div>
     </div>
   </div>
 </div>

@@ -7,13 +7,15 @@ import { AppRoutingModule } from './app-routing.module';
 import { ParkComponent } from './park/park.component';
 import { ParksService } from '../services/parks.service';
 import { SortPipe } from '../pipes/sort.pipe';
+import { NavComponent } from './nav/nav.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     ParkComponent,
-    SortPipe
+    SortPipe,
+    NavComponent
   ],
   imports: [
     AppRoutingModule,

@@ -13,7 +13,8 @@
             {{attraction.name}}
           </td>
           <td>
-            {{attraction.waitTime}}
+            <span *ngIf="attraction.active">{{attraction.waitTime}}</span>
+            <span *ngIf="!attraction.active">Inactive</span>
           </td>
         </tr>
       </tbody>

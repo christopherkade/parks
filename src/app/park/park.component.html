@@ -1,5 +1,6 @@
 <div class="park">
   <div class="container">
+    <input type="text" placeholder="Search..." [(ngModel)]="filteredAttraction.name" class="input search-bar" name="first">
     <table class="table">
       <thead>
         <tr>
@@ -8,7 +9,7 @@
         </tr>
       </thead>
       <tbody>
-        <tr *ngFor="let attraction of attractions | sortBy: 'waitTime'">
+        <tr *ngFor="let attraction of attractions | attractionfilter: filteredAttraction | sortBy: 'waitTime'">
           <td class="attraction-name">
             {{attraction.name}}
           </td>

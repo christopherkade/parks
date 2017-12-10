@@ -7,7 +7,9 @@ import { AppRoutingModule } from './app-routing.module';
 import { ParkComponent } from './park/park.component';
 import { ParksService } from '../services/parks.service';
 import { SortPipe } from '../pipes/sort.pipe';
+import { AttractionFilterPipe } from '../pipes/filter.pipe';
 import { NavComponent } from './nav/nav.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -15,12 +17,14 @@ import { NavComponent } from './nav/nav.component';
     HomeComponent,
     ParkComponent,
     SortPipe,
+    AttractionFilterPipe,
     NavComponent
   ],
   imports: [
     AppRoutingModule,
     BrowserModule,
-    HttpModule
+    HttpModule,
+    FormsModule
   ],
   providers: [ParksService],
   bootstrap: [AppComponent]

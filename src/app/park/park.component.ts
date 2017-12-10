@@ -11,7 +11,8 @@ import { Observable } from "rxjs/Observable";
 })
 export class ParkComponent implements OnInit {
 
-  attractions: any = [];
+   filteredAttraction: Attraction = new Attraction();
+   attractions: any = [];
 
   constructor(public parksService: ParksService,
     private route: ActivatedRoute,

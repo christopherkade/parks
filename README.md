@@ -1,6 +1,21 @@
 # Parks
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.4.9.
+Retrieve wait-time for Disneyland Parks around the world.
+
+Park | Supported
+---------- | -------------
+Disneyland Paris, Magic Kingdom | :ballot_box_with_check:
+Disneyland Paris, Walt Disney Studios | :ballot_box_with_check:
+Walt Disney World, Magic Kingdom | :ballot_box_with_check:
+Walt Disney World, Epcot | :ballot_box_with_check:
+Walt Disney World, Hollywood Studios | :ballot_box_with_check:
+Walt Disney World, Animal Kingdom | :ballot_box_with_check:
+Disneyland, Magic Kingdom | :ballot_box_with_check:
+Disneyland, California Adventure | :ballot_box_with_check:
+Shanghai Disney Resort, Magic Kingdom | :heavy_multiplication_x:
+Tokyo Disney Resort, Magic Kingdom | :heavy_multiplication_x:
+Tokyo Disney Resort, Disney Sea | :heavy_multiplication_x:
+Hong Kong Disneyland | :heavy_multiplication_x:
 
 ## Development server
 
@@ -21,7 +36,3 @@ Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.
 ## Running end-to-end tests
 
 Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).

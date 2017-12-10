@@ -11,7 +11,7 @@ export class HomeComponent implements OnInit {
   readonly parks = [
     {
       name: 'Disneyland Paris',
-      image: 'https://user-images.githubusercontent.com/15229355/33804821-d9c2a5fc-dda4-11e7-93a4-3c1c4bb44360.png',
+      image: 'assets/img/disneylandparis-logo.png',
       subparks: [
         {
           name: 'Magic Kingdom',
@@ -25,7 +25,7 @@ export class HomeComponent implements OnInit {
     },
     {
       name: 'Disneyland Resort',
-      image: 'https://user-images.githubusercontent.com/15229355/33804820-d79dc4fa-dda4-11e7-9f03-7538bb1344c1.png',
+      image: 'assets/img/disneyland-logo.png',
       subparks: [
         {
           name: 'Magic Kingdom',
@@ -39,7 +39,7 @@ export class HomeComponent implements OnInit {
     },
     {
       name: 'Walt Disney World',
-      image: 'https://user-images.githubusercontent.com/15229355/33804822-dcb56c90-dda4-11e7-9aaf-d5a0e26dd3f9.png',
+      image: 'assets/img/wdw-logo.png',
       subparks: [
         {
           name: 'Magic Kingdom',

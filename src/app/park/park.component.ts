@@ -13,7 +13,7 @@ export class ParkComponent implements OnInit {
 
   attractions: any = [];
 
-  constructor(private parksService: ParksService,
+  constructor(public parksService: ParksService,
     private route: ActivatedRoute,
     private router: Router) { }
 

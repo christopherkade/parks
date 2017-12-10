@@ -5,15 +5,15 @@
         <div class="card park-card">
           <div class="card-image park-logo">
             <figure class="image">
-              <img [src]="park.image" [alt]="park.name">
+              <img [src]=park.image [alt]=park.name>
             </figure>
           </div>
           <div class="card-content">
-            <a class="button park-button" *ngFor="let subpark of park.subparks" routerLink={{subpark.link}}>
+            <a class="button park-button" *ngFor="let subpark of park.subparks" [routerLink]=subpark.link>
               {{subpark.name}}
             </a>
           </div>
-        </div>
+        </div>        
       </div>
     </div>
   </div>

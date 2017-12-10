@@ -1,0 +1,29 @@
+<div class="park">
+  <div class="container">
+    <table class="table is-bordered is-striped is-narrow">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Wait time</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let attraction of attractions">
+          <td>
+            {{attraction.name}}
+          </td>
+          <td>
+            {{attraction.waitTime}}
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="container spinner-container" *ngIf="parksService.loading">
+        <div class="spinner">
+          <div class="double-bounce1"></div>
+          <div class="double-bounce2"></div>
+        </div>
+    </div>
+  </div>
+</div>

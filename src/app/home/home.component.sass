@@ -1,0 +1,32 @@
+@import ../../styles
+
+.home
+  text-align: center
+
+.container
+  margin-top: 20vh
+
+// CARD
+.park-card
+  text-align: center
+  height: 100%
+  margin: 10px
+
+.park-button
+  width: 55%
+  margin-bottom: 5px
+  background-color: transparent
+  color: black
+
+.park-logo
+  padding: 25px
+
+.park-button:hover
+  background-color: $primary
+
+@include phone
+  .container
+    margin-top: 5vh
+
+  .park-button
+    width: 80%

@@ -1,0 +1,20 @@
+<div class="home">
+  <div class="container">
+    <div class="columns">
+      <div class="column is-4" *ngFor="let park of parks">
+        <div class="card park-card">
+          <div class="card-image park-logo">
+            <figure class="image">
+              <img src={{park.image}} alt="Placeholder image">
+            </figure>
+          </div>
+          <div class="card-content">
+            <a class="button park-button" *ngFor="let subpark of park.subparks" routerLink={{subpark.link}}>
+              {{subpark.name}}
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

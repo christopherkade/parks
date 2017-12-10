@@ -4,14 +4,14 @@ Retrieve wait-time for Disneyland Parks around the world.
 
 Park | Supported
 ---------- | -------------
-Disneyland Paris, Magic Kingdom | :ballot_box_with_check:
-Disneyland Paris, Walt Disney Studios | :ballot_box_with_check:
-Walt Disney World, Magic Kingdom | :ballot_box_with_check:
-Walt Disney World, Epcot | :ballot_box_with_check:
-Walt Disney World, Hollywood Studios | :ballot_box_with_check:
-Walt Disney World, Animal Kingdom | :ballot_box_with_check:
-Disneyland, Magic Kingdom | :ballot_box_with_check:
-Disneyland, California Adventure | :ballot_box_with_check:
+Disneyland Paris, Magic Kingdom | :heavy_check_mark:
+Disneyland Paris, Walt Disney Studios | :heavy_check_mark:
+Walt Disney World, Magic Kingdom | :heavy_check_mark:
+Walt Disney World, Epcot | :heavy_check_mark:
+Walt Disney World, Hollywood Studios | :heavy_check_mark:
+Walt Disney World, Animal Kingdom | :heavy_check_mark:
+Disneyland, Magic Kingdom | :heavy_check_mark:
+Disneyland, California Adventure | :heavy_check_mark:
 Shanghai Disney Resort, Magic Kingdom | :heavy_multiplication_x:
 Tokyo Disney Resort, Magic Kingdom | :heavy_multiplication_x:
 Tokyo Disney Resort, Disney Sea | :heavy_multiplication_x:

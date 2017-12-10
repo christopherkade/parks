@@ -1,5 +1,8 @@
 @import ../../styles
 
+.park
+  background-color: $primary
+
 .container
   padding: 25px
 
@@ -24,7 +27,7 @@
   width: 100%
   height: 100%
   border-radius: 50%
-  background-color: #333
+  background-color: $primary
   opacity: 0.6
   position: absolute
   top: 0
@@ -51,8 +54,5 @@
     -webkit-transform: scale(1.0)
 
 @include phone
-  .park
-    margin: 10px
-
   .table
     margin: 0

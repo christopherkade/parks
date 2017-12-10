@@ -2,9 +2,14 @@
 
 .home
   text-align: center
+  background: url(../../assets/img/disneyland-paris.jpg) no-repeat center fixed
+  -webkit-background-size: cover
+  background-size: cover
+  height: 100%
+
 
 .container
-  margin-top: 20vh
+  padding-top: 20vh
 
 // CARD
 .park-card
@@ -25,8 +30,5 @@
   background-color: $primary
 
 @include phone
-  .container
-    margin-top: 5vh
-
   .park-button
     width: 80%

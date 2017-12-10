@@ -178,7 +178,7 @@ AppModule = __decorate([
 /***/ "../../../../../src/app/home/home.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"home\">\n  <div class=\"container\">\n    <div class=\"columns\">\n      <div class=\"column is-4\" *ngFor=\"let park of parks\">\n        <div class=\"card park-card\">\n          <div class=\"card-image park-logo\">\n            <figure class=\"image\">\n              <img src={{park.image}} alt=\"Placeholder image\">\n            </figure>\n          </div>\n          <div class=\"card-content\">\n            <a class=\"button park-button\" *ngFor=\"let subpark of park.subparks\" routerLink={{subpark.link}}>\n              {{subpark.name}}\n            </a>\n          </div>\n        </div>\n      </div>\n    </div>\n  </div>\n</div>\n"
+module.exports = "<div class=\"home\">\n  <div class=\"container\">\n    <div class=\"columns\">\n      <div class=\"column is-4\" *ngFor=\"let park of parks\">\n        <div class=\"card park-card\">\n          <div class=\"card-image park-logo\">\n            <figure class=\"image\">\n              <img src={{park.image}} alt={{park.name}}>\n            </figure>\n          </div>\n          <div class=\"card-content\">\n            <a class=\"button park-button\" *ngFor=\"let subpark of park.subparks\" routerLink={{subpark.link}}>\n              {{subpark.name}}\n            </a>\n          </div>\n        </div>\n      </div>\n    </div>\n  </div>\n</div>\n"
 
 /***/ }),
 
@@ -221,7 +221,7 @@ var HomeComponent = (function () {
         this.parks = [
             {
                 name: 'Disneyland Paris',
-                image: '../../assets/img/disneylandparis-logo.png',
+                image: '/assets/img/disneylandparis-logo.png',
                 subparks: [
                     {
                         name: 'Magic Kingdom',
@@ -235,7 +235,7 @@ var HomeComponent = (function () {
             },
             {
                 name: 'Disneyland Resort',
-                image: '../../assets/img/disneyland-logo.png',
+                image: '/assets/img/disneyland-logo.png',
                 subparks: [
                     {
                         name: 'Magic Kingdom',
@@ -249,7 +249,7 @@ var HomeComponent = (function () {
             },
             {
                 name: 'Walt Disney World',
-                image: '../../assets/img/wdw-logo.png',
+                image: '/assets/img/wdw-logo.png',
                 subparks: [
                     {
                         name: 'Magic Kingdom',

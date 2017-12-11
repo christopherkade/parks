@@ -14,7 +14,7 @@ export class HomeComponent implements OnInit {
       image: 'assets/img/disneylandparis-logo.png',
       subparks: [
         {
-          name: 'Magic Kingdom',
+          name: 'Disneyland',
           link: '/dlp-mk'
         },
         {
@@ -28,7 +28,7 @@ export class HomeComponent implements OnInit {
       image: 'assets/img/disneyland-logo.png',
       subparks: [
         {
-          name: 'Magic Kingdom',
+          name: 'Disneyland',
           link: '/dlr-mk'
         },
         {

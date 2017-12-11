@@ -61,9 +61,14 @@ export class HomeComponent implements OnInit {
     }
   ]
 
+  images = ['disneylandparis.jpg', 'disneyland.jpg', 'epcot.jpg', 'waltdisneyworld-mk.jpg']
+  image = 'url(../../assets/img/';
+
   constructor(private parksService: ParksService) {}
 
-  ngOnInit() {
+  ngOnInit() {    
+    // Select one image randomly and set it as background image
+    this.image += this.images[Math.floor(Math.random() * this.images.length)] + ')';
     this.parksService.selectedPark = null;
   }
 }

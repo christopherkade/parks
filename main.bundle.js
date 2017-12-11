@@ -674,7 +674,7 @@ var HomeComponent = (function () {
             }
         ];
         this.images = ['disneylandparis.jpg', 'disneyland.jpg', 'epcot.jpg', 'waltdisneyworld-mk.jpg'];
-        this.image = 'url(../../assets/img/';
+        this.image = 'url(assets/img/';
     }
     HomeComponent.prototype.ngOnInit = function () {
         // Select one image randomly and set it as background image

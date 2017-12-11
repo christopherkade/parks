@@ -62,7 +62,7 @@ export class HomeComponent implements OnInit {
   ]
 
   images = ['disneylandparis.jpg', 'disneyland.jpg', 'epcot.jpg', 'waltdisneyworld-mk.jpg']
-  image = 'url(../../assets/img/';
+  image = 'url(assets/img/';
 
   constructor(private parksService: ParksService) {}
 

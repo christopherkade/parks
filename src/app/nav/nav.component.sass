@@ -4,49 +4,47 @@
   background-color: transparent
   margin: 5px
 
-.field
-  position: absolute
-  right: 0
-
-.icon
+.ck-icon
   vertical-align: middle
-
-.made-by-text
-  font-size: 1.15em
 
 .made-by-item
   position: absolute
   right: 0
+  padding: 0
 
-/* Button */
-.btn  
-  color: #fff
+a
+  text-decoration: none
+  color: black
+
+.btn
+  padding: 5px
+  border-radius: 4px
+  color: black
   cursor: pointer
   display: block
-  margin: 0 auto 2em
-  padding: 5px
   position: relative
-  vertical-align: middle
-  width: 100%
-  background: $primary
-    
-  svg
-    height: 100%
-    left: 0
-    position: absolute
-    top: 0
-    width: 100%
-  
-  rect 
-    fill: none
-    stroke: white
-    stroke-width: 5
-    stroke-dasharray: 422, 0
+  border: 2px solid white
+  transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1) 0s
 
-.btn:hover    
-  color: white
-  
-  rect
-    stroke-dasharray: 20, 166
-    stroke-dashoffset: 50
-    transition: all 1.35s cubic-bezier(0.19, 1, 0.22, 1)
+  &:hover
+    color: white
+    background-color: transparent
+    text-shadow: nthree
+
+  &:hover:before
+    left: 0%
+    right: auto
+    width: 100%
+
+  &:before
+    display: block
+    position: absolute
+    top: 0px
+    right: 0px
+    height: 100%
+    width: 0px
+    z-index: -1
+    content: ''
+    color: white
+    background: $primary
+    transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1) 0s
